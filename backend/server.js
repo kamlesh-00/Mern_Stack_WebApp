@@ -19,7 +19,7 @@ const usersRouter = require('./routes/users');
 app.use('/api/exercises',exercisesRouter);
 app.use('/api/users',usersRouter);
 
-app.use(express.static('../build'));
+app.use(express.static('./build'));
 
 app.listen(port,()=>{
     console.log('Server is running at port :'+port);
